@@ -5,7 +5,7 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Le prix HT d'un produit est de 200 MAD. La TVA est de 20% (soit 0.20). Calculez et affichez le prix TTC (TTC = HT + (HT * TVA)).
+ * Le prix HT d'un produit est de 200 MAD. La TVA est de 20% (soit 0.20). Calculez et affichez le prix TTC (TTC =c).
  *
  * RÉSULTAT ATTENDU
  * 240
@@ -18,3 +18,7 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+const HT = 200;
+const TVA = 0.20;
+const prixTTC = HT + (HT * TVA);
+console.log(prixTTC);
