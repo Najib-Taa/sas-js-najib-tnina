@@ -9,4 +9,9 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+const age = 19;
+if (age >= 18) {console.log("Entrée autorisée");
+    
+} else {console.log("Accès refusé")
+    
+}

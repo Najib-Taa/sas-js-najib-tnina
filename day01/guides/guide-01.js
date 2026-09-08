@@ -9,4 +9,11 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+let a = 5;
+let b = 10;
+let temporaire = a;
+a = b;
+b = temporaire;
+console.log(a);
+console.log(b);
+
