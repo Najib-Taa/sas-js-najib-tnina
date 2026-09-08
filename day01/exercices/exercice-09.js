@@ -17,4 +17,10 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+const estadmin = false;
+const estmoderateur = true;
+const motdepassevalide = true;
+if (motdepassevalide && (estadmin || estmoderateur))
+{console.log("Accès Accordé");}
+else{console.log("Accès Refusé");}
+
