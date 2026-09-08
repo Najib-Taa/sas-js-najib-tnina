@@ -17,4 +17,9 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+const annee = 2024
+if ((annee % 4 === 0 && annee % 100 !== 0)|| (annee % 400 === 0)) {console.log(`${annee} est une année bissextile.`);
+    
+} else {console.log(`${annee} n'est pas une année bissextile.`);
+    
+}
