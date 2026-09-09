@@ -17,4 +17,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+const joueur1 = "Pierre";
+const joueur2 = "Ciseaux";
+if (joueur1 === joueur2) {
+    console.log(égalité);}
+else if (
+    (joueur1 === "Pierre" && joueur2 === "Ciseaux") ||
+    (joueur1 === "Ciseaux" && joueur2 === "papier") ||
+    (joueur1 === "papier" && joueur2 === "Pierre")
+){
+    console.log("Joueur 1 gagne");
+}
+ else {
+    console.log("joueur 2 gagne")
+}

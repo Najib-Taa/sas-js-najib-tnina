@@ -19,7 +19,7 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-const age = 15
+const age = 15;
 if (age < 12 )
 {console.log("enfant");}
 else if (age >=12 && age <= 17)
