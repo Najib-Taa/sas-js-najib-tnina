@@ -51,9 +51,9 @@ git push
 
 ## ✅ Fin de journée
 
-- [ ] Les questions de recherche ont été traitées.
-- [ ] Les trois exercices guidés ont été codés et compris.
-- [ ] Les 20 exercices et le challenge contiennent une solution personnelle.
-- [ ] `npm test` ne signale plus de fichier vide ni d'erreur de syntaxe.
-- [ ] Plusieurs commits avec des messages compréhensibles sont visibles sur GitHub.
+- [x] Les questions de recherche ont été traitées.
+- [x] Les trois exercices guidés ont été codés et compris.
+- [x] Les 20 exercices et le challenge contiennent une solution personnelle.
+- [x] `npm test` ne signale plus de fichier vide ni d'erreur de syntaxe.
+- [x] Plusieurs commits avec des messages compréhensibles sont visibles sur GitHub.
 - [ ] Le lien du dépôt a été remis dans Google Classroom.

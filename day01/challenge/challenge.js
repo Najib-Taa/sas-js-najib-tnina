@@ -21,4 +21,15 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-
+const montantemprunte = 100000;
+const dureeEnMois = 24;
+const revenuMensuel = 8000;
+const mensualité = montantemprunte / dureeEnMois;
+const limitecapacite = revenuMensuel * 0.30;
+if (mensualité <= limitecapacite) {
+    console.log(`"Prêt accordé. Mensualité : ${mensualité.toFixed(2)} MAD"`);
+} else if (revenuMensuel > 10000) {
+    console.log("Prêt refusé. Conseil : Veuillez augmenter la durée du crédit.");
+} else {
+    console.log("Pret refusé");
+}

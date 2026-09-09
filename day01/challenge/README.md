@@ -49,7 +49,7 @@ git push
 
 ## ✅ Validation
 
-- [ ] Le marqueur `TODO` a été remplacé par mon code.
-- [ ] Le programme s'exécute sans erreur.
-- [ ] Un cas normal et un cas limite sont testés.
-- [ ] Je peux expliquer ma démarche au formateur.
+- [x] Le marqueur `TODO` a été remplacé par mon code.
+- [x] Le programme s'exécute sans erreur.
+- [x] Un cas normal et un cas limite sont testés.
+- [x] Je peux expliquer ma démarche au formateur.
