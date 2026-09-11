@@ -15,4 +15,16 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let la_grille_d_echequier = "";
+for (let i = 0; i < 8; i++) {
+
+    for (let j = 0; j < 8; j++) {
+        if ((i + j) % 2 === 0) {
+            la_grille_d_echequier += " ";
+        } else {
+            la_grille_d_echequier += "#";
+        }
+    }
+    la_grille_d_echequier += "\n";
+}
+console.log(la_grille_d_echequier);

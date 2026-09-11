@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+for (let n = 100; n <= 999; n++) {
+    let text = n.toString();
+    
+    let chiffre1 = Number(text[0]);
+    let chiffre2 = Number(text[1]);
+    let chiffre3 = Number(text[2]);
+    let la_somme_des_cubes = (chiffre1*chiffre1*chiffre1)+(chiffre2*chiffre2*chiffre2)+(chiffre3*chiffre3*chiffre3);
+    if (la_somme_des_cubes === n) {
+        console.log(n);
+    }
+}
