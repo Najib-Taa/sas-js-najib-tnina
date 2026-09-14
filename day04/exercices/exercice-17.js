@@ -14,4 +14,29 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function extrairePrixEtConvertir(chaineBrute) {
+    if (!chaineBrute || chaineBrute.trim() === "") {
+        return null;
+    }
+
+    let chiffreUniquement = "";
+
+    for (let i = 0; i < chaineBrute.length; i++) {
+        let caractere = chaineBrute[i];
+
+        if ((caractere >= '0' && caractere <= '9') || caractere === '.') {
+            chiffreUniquement += caractere;
+        }
+    }
+
+    let prixFinal = parseFloat(chiffreUniquement);
+
+    if (isNaN(prixFinal)) {
+        return null;
+    }
+
+    return prixFinal;
+}
+
+console.log(extrairePrixEtConvertir("   Prix: 15.99 $  ")); 
+console.log(extrairePrixEtConvertir("   Gratuit  "));        

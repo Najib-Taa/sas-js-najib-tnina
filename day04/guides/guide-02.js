@@ -9,4 +9,9 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+function test () {
+    let x = 10;
+
+}
+console.log(x);
+// une variable déclarée avec 'let' dans une fonction est accessible seulement à l'intérieur de cette fonction lui meme, elle n'est pas accessible à l'extérieur.

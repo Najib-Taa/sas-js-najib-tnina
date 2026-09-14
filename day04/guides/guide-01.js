@@ -9,4 +9,8 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+function saluer(nom) {
+    return "Bonjour," + nom + "!";
+}
+let message = saluer("Said");
+console.log(message);

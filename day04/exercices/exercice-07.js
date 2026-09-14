@@ -14,4 +14,11 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function carre(x) {
+    return x * x;
+}
+function sommeDesCarres(a, b) {
+    return carre(a) + carre(b);
+}
+let resultat = sommeDesCarres(2, 4);
+console.log(resultat);

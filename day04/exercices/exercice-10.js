@@ -15,4 +15,19 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function estPalindrome(mot) {
+    let mot_inverse ="";
+    for (let i = mot.length -1; i >= 0; i--) {
+        mot_inverse += mot[i];
+    }
+    if (mot === mot_inverse) {
+        return true;
+    } else {
+        return false;
+    }   
+
+}
+
+console.log(estPalindrome("radar"));
+console.log(estPalindrome("said"));
+console.log(estPalindrome("kayak"));

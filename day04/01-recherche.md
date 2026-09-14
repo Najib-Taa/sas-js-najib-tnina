@@ -200,23 +200,50 @@ Cela ne fonctionne pas.
 
 > Qu'est-ce qu'une fonction **Callback** ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
 > À compléter avec mes propres mots.
 
+Une fonction Callback est une fonction qui passe d'une fonction à une autre fonction, afin d'être exécutée (rappelée) plus tard, souvent après la fin d'une tâche ou d'un calcul.
+
+Exemple :
+function saluer() {
+     console.log("Bonjour"); }
+function executer(callback) {
+     callback(); }
+
+executer(saluer); 
+
+// 'saluer' est la fonction callback
+
+
 ---
+
 
 ### Question 09
 
 > Peut-on donner une valeur par défaut à un paramètre (ex: `function saluer(nom = "Invité")`) ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
 > À compléter avec mes propres mots.
+
+Oui, c'est possible. Si l'argument n'est pas fourni lors de l'appel de la fonction, le paramètre prendre automatiquement la valeur par défaut définie avec le signe "=".
+
+Exemple :
+function saluer(nom = "Invité") {
+     console.log("Bonjour " + nom); }
+
+saluer(); 
+
+// Affiche : "Bonjour Invité"
+
+
+
 
 ---
 
@@ -224,14 +251,28 @@ Cela ne fonctionne pas.
 
 > Qu'est-ce que la *récursivité* en programmation ?
 
-- [ ] J'ai recherché et compris la notion.
+- [x] J'ai recherché et compris la notion.
 
 **Ma réponse :**
 
 > À compléter avec mes propres mots.
 
+La récursivité est une technique où une fonction s'appelle elle-même pour résoudre un problème. Pour éviter une boucle infinie, elle doit obligatoirement contenir une "condition d'arrêt" (base case).
+
+Exemple :
+
+function compte(n) {
+    if (n === 0) return; // Condition d'arrêt
+    console.log(n);
+
+    compte(n - 1); // Appel récursif
+}
+compte (10)
+
+
+
 
 ## ✅ Validation de la recherche
 
-- [ ] Je peux expliquer au moins trois réponses sans lire mes notes.
-- [ ] J'ai noté les notions que je dois encore clarifier.
+- [x] Je peux expliquer au moins trois réponses sans lire mes notes.
+- [x] J'ai noté les notions que je dois encore clarifier.
