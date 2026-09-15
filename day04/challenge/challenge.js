@@ -21,4 +21,31 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let or = 0
+
+function ajouterOr(montant) {
+    or += montant;
+    console.log("Vous avez ramassé " + montant + "or. Total: " + or);
+}
+
+function depenserOr(montant) {
+    if (or >= montant) {
+        or -= montant;
+        console.log("Achat réussi ! Vous avez dépensé " + montant + " or. Il vous reste " + or + "or.");
+    } else { 
+        console.log("Fonds insuffisants");
+    }
+}
+
+function combatGagne() {
+    let montant_aleatoire = Math.floor(Math.random() * (50 - 10 + 1) + 10);
+    ajouterOr(montant_aleatoire);
+}
+console.log("-- Début de l'aventure  !!!--");
+combatGagne();
+combatGagne();
+combatGagne();
+
+console.log("\n Tentation d'achat d'une épée à 100 or : ");
+depenserOr(100);
+console.log("-- Fin de l'aventure  !!!--")
