@@ -19,5 +19,44 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// 1. Initialize the shopping cart with the starting items
+let panier = [101, 105, 101, 102];
+
+function ajouterAuPanier(id) {
+    panier.push(id);
+}
+
+function retirerDuPanier(id) {
+    panier = panier.filter(articleId => articleId !== id);
+}
+
+function afficherQuantites() {
+    const compte = {};
+
+    for (let id of panier) {
+        if (compte[id]) {
+            compte[id]++;
+        } else {
+            compte[id] = 1;
+        }
+    }
+
+    for (let id in compte) {
+        console.log(`Article ${id} : ${compte[id]} exemplaires`);
+    }
+}
+
+console.log("--- État actuel du panier ---");
+afficherQuantites();
+
+console.log("\n---Ajouter à nouveau le produit 102 ---");
+ajouterAuPanier(102);
+afficherQuantites();
+
+console.log("\n--- Supprimer toutes les occurrences du produit 101 ---");
+retirerDuPanier(101);
+afficherQuantites();
+
+
+
+
 
