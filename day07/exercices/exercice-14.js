@@ -14,4 +14,11 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function extraireDonneesEtudiant(etudiant) {
+    const { prenom, ville } = etudiant;
+    console.log("Prénom extrait :", prenom);
+    console.log("Ville extraite  :", ville);
+    return { prenom, ville };
+}
+const etudiantTest = { prenom: "Sara", ville: "Rabat", note: 16 };
+extraireDonneesEtudiant(etudiantTest);

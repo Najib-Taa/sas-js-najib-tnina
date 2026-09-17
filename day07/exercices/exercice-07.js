@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function obtenirTitreDeuxiemeLivre() {
+    const livres = [
+        { titre: "Le père Goriot", auteur: "Victor Hugo" },
+        { titre: "Candide", auteur: "Voltaire" }, 
+        { titre: "Les Misérables", auteur: "Victor Hugo" }
+    ];
+    console.log("Titre du 2ème livre :", livres[1].titre);
+    return livres[1].titre;
+}
+
+obtenirTitreDeuxiemeLivre();

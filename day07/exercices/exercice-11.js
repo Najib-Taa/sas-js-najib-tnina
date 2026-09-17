@@ -14,4 +14,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function clonerEtAjouter(original) {
+    const copie = { ...original };
+    copie.c = 3;
+    return copie;
+}
+const objetOriginal = { a: 1, b: 2 };
+const objetCopie = clonerEtAjouter(objetOriginal);
+
+console.log("Original :", objetOriginal);
+console.log("Copie    :", objetCopie);

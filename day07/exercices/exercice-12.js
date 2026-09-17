@@ -14,4 +14,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function creerCompteBancaire() {
+    const compteBancaire = {
+        solde: 0,
+        deposer(montant) {
+             this.solde += montant;
+        }
+    };
+    return compteBancaire;
+} 
+
+const mon_compte = creerCompteBancaire();
+console.log(" Montant initial :", mon_compte.solde);
+
+mon_compte.deposer(500);
+console.log(" Montant final :", mon_compte.solde);

@@ -14,4 +14,20 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function filtrerCandidats(candidats) {
+    const candidatsFiltres = [];
+    for (let candidat of candidats) {
+        if (candidat.score >= 10) {
+            candidatsFiltres.push(candidat);
+        }
+    }
+
+    return candidatsFiltres;
+}
+const listeTest = [
+     { nom: "Ahmed", score: 21 },
+    { nom: "Najib", score: 9 }, 
+    { nom: "Omar", score: 19 }
+];
+
+console.log("Résultat du filtrage :", filtrerCandidats(listeTest));

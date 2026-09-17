@@ -14,4 +14,11 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function obtenirValeurs(utilisateur) {
+    const tableauValeurs = Object.values(utilisateur);
+    console.log("Valeurs de l'objet :", tableauValeurs);
+     return tableauValeurs;
+}
+
+const utilisateurTest = { nom: "Najib", age: 21, estAdmin: true };
+obtenirValeurs(utilisateurTest);

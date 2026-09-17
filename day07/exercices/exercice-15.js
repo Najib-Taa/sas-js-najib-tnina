@@ -16,4 +16,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+function simulerParsingJSON(chaineJSON) {
+
+    const objetJS = JSON.parse(chaineJSON);
+    objetJS.vu = true;
+    const nouvelleChaineJSON = JSON.stringify(objetJS);
+    return nouvelleChaineJSON;
+}
+const jsonInitial = '{"id":1, "titre":"Apprendre le JS", "vu":false}';
+console.log(" Resultat final :", simulerParsingJSON(jsonInitial));
