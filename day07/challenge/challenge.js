@@ -20,4 +20,58 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let utilisateurs = [];
+let prochainId = 1;
+
+function ajouterUtilisateur(nom, email) {
+    const nouvelUtilisateur = {
+        id: prochainId++,
+        nom: nom,
+        email: email
+    };
+    utilisateurs.push(nouvelUtilisateur);
+    return nouvelUtilisateur;
+} 
+function trouverParEmail(email) {
+    for (let utilisateur of utilisateurs) {
+        if (utilisateur.email === email) {
+            return utilisateur;
+        }
+    }
+    return null;
+
+}
+
+function supprimerParId(id) {
+    utilisateurs = utilisateurs.filter(utilisateur => utilisateur.id !== id);
+}
+
+function afficherAnnuaire() {
+    console.log("=== LISTE DE L'ANNUAIRE ===");
+     if (utilisateurs.length === 0) {
+        console.log("L'annuaire est complètement vide.");
+    } else {
+        for (let u of utilisateurs) {
+            console.log(`[ID: ${u.id}] | Nom: ${u.nom} | Email: ${u.email}`);
+        }
+    }
+    console.log("==============================");
+}
+
+
+
+ajouterUtilisateur("Najib", "najib@email.com");
+ajouterUtilisateur("Sara", "sara@email.com");
+
+console.log("Vérification du répertoire après l'ajout de Najib et Sarah :");
+afficherAnnuaire();
+
+console.log("Tentative de recherche de l'e-mail de Najib :");
+console.log(trouverParEmail("najib@email.com"));
+
+console.log("Test de suppression de compte n° 1 (Najib) ");
+supprimerParId(1);
+afficherAnnuaire();
+
+
+

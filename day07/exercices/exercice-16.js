@@ -14,3 +14,19 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
+function obtenirPrenomDeuxiemeEmploye() {
+     const entreprise = {
+        nom: "Najibologia",
+        employes: [
+            { prenom: "Najib" },
+            { prenom: "Omar" },
+            { prenom: "Sara" }
+        ]
+    };
+    const prenomDeuxieme = entreprise.employes[1].prenom;
+
+    console.log("Prénom du deuxième employé :", prenomDeuxieme);
+    return prenomDeuxieme;
+}
+
+obtenirPrenomDeuxiemeEmploye();
